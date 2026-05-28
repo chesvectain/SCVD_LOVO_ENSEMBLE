@@ -94,20 +94,12 @@ python code/preprocess.py
 ### Step 3: Run Main Experiments (Single Models + Within-Feature Ensembles)
 
 ```bash
-python code/20260115_threshold_fixed.py
+python code/ensemble_threshold_fixed.py
 ```
 
 Output: `runs/v5_fixed/`
 
-### Step 4: Run Cross-Feature Late Fusion
-
-```bash
-python code/cross_feature_fusion.py
-```
-
-Output: `runs/cross_feature/`
-
-### Step 5: Compare Threshold Strategies
+### Step 4: Compare Threshold Strategies
 
 ```bash
 python code/compare_thresholds.py
@@ -115,7 +107,7 @@ python code/compare_thresholds.py
 
 Output: `runs/threshold_comparison/`
 
-### Step 6: Generate Final Summary
+### Step 5: Generate Final Summary
 
 ```bash
 python code/summarize_all_results.py
