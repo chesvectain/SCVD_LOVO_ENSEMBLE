@@ -10,7 +10,7 @@ This repository contains the experiment code and result data for the paper:
 
 We propose a framework for detecting **unknown** smart contract vulnerabilities (i.e., vulnerability types unseen during training) using:
 - **Dual feature representation**: LiWP n-gram sparse features + Skip-gram dense embeddings
-- **Two-stage ensemble strategy**: within-feature soft voting (Best2, All, Fast2) + cross-feature late fusion
+- **Ensemble strategy**: within-feature soft voting with three selection strategies (Best2, All, Fast2)
 - **Strengthened LOVO evaluation**: Leave-One-Vulnerability-Out with 5-fold CV (40 evaluations total)
 - **Adaptive threshold selection**: validation-set F1 maximization per fold
 
@@ -27,7 +27,6 @@ We propose a framework for detecting **unknown** smart contract vulnerabilities 
 ├── code/
 │   ├── preprocess.py                # Opcode sequence preprocessing & normalization
 │   ├── 20260115_threshold_fixed.py  # Main experiment: single models + within-feature ensembles
-│   ├── cross_feature_fusion.py      # Cross-feature late fusion experiment
 │   ├── compare_thresholds.py        # Fixed vs. adaptive threshold comparison
 │   └── summarize_all_results.py     # Final summary across all systems
 │
@@ -35,9 +34,6 @@ We propose a framework for detecting **unknown** smart contract vulnerabilities 
     ├── single_within/
     │   ├── results_raw.csv          # Per-fold results for all single models & within-feature ensembles
     │   └── ALL_RESULTS_COMBINED.csv # Aggregated summary (mean F1, ROC-AUC, PR-AUC per system)
-    ├── cross_feature/
-    │   ├── results_cross_feature.csv  # Per-fold cross-feature fusion results
-    │   └── summary_cross_feature.csv  # Cross-feature aggregated summary
     └── threshold_comparison/
         ├── overall_summary.csv      # Fixed-0.5 vs. adaptive threshold comparison summary
         └── per_target_f1.csv        # Per-vulnerability-type F1 under each threshold mode
