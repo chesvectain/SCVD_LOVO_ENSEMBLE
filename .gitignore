@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Large data files (full dataset not distributed)
+*.npz
+preprocessed_full*.csv
+preprocessed_S*.csv
+
+# Cached model files
+*.joblib
+*.pkl
+
+# Run outputs (reproducible via scripts)
+runs/
+
+# OS
+.DS_Store
+Thumbs.db
