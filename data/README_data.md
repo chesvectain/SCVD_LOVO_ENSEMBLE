@@ -58,7 +58,7 @@ TxSpector replays Ethereum mainnet transactions and extracts the EVM execution t
 
 SODA's detection plugins monitor runtime behavior and assign vulnerability labels.
 
-- **Repository**: https://github.com/jun-ocs/SODA (original)
+- **Repository**: https://github.com/pandabox-dev/SODA (original)
 - **Plugin mapping used in this study**:
   - P1 → S1 (Re-entrancy)
   - P2 → S2 (Unexpected Function Invocation)
