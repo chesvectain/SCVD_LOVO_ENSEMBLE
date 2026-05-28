@@ -136,4 +136,4 @@ The full opcode sequence dataset can be reproduced from Ethereum mainnet transac
 ## License
 
 Code: MIT License  
-Data: CC BY 4.0
+Data: CC BY-NC 4.0 
