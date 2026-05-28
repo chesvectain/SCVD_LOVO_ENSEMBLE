@@ -3,8 +3,6 @@
 This repository contains the experiment code and result data for the paper:
 
 > **"Detecting unknown vulnerabilities in smart contracts using opcode-based ensemble learning with LOVO evaluation"**  
-> Jiwon Bang, Mi-Jung Choi  
-> *Connection Science*, Taylor & Francis (under review)
 
 ---
 
